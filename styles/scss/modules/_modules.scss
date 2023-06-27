@@ -1,0 +1,25 @@
+#secondButton {
+  border-left: none;
+}
+
+.upper__buttons__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upper__contact__item {
+    width : 100%;
+    display : flex;
+    align-items: center;
+
+    span {
+        padding-left : 0.5rem;
+    }
+}
+
+.icon {
+  background-color: pink;
+  width: 16px;
+  height: 16px;
+}

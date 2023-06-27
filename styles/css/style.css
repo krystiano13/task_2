@@ -2,4 +2,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-right: solid rgb(216, 216, 216) 2px;
+  border-left: solid rgb(216, 216, 216) 2px;
+}
+
+html {
+  background-color: whitesmoke;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+  min-height: 15vh;
+}
+header .upper {
+  width: 100%;
+  min-height: 6vh;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid rgb(216, 216, 216) 2px;
+}
+header .upper__contact {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .upper__buttons {
+  display: flex;
+}
+header .upper__buttons__button {
+  height: 100%;
+  width: 100px;
+}
+
+#secondButton {
+  border-left: none;
+}
+
+.upper__buttons__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upper__contact__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.upper__contact__item span {
+  padding-left: 0.5rem;
+}
+
+.icon {
+  background-color: pink;
+  width: 16px;
+  height: 16px;
 }/*# sourceMappingURL=style.css.map */

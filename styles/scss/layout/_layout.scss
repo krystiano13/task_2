@@ -1,0 +1,30 @@
+$borderColor: rgb(216, 216, 216);
+
+header {
+    width : 100vw;
+    min-height : 15vh;
+
+    .upper {
+        width : 100%;
+        min-height: 6vh;
+        display : flex;
+        justify-content: space-around;
+        border-bottom: solid $borderColor 2px;
+
+        &__contact {
+            width : 170px;
+            display : flex;
+            flex-direction: column;
+            justify-content: center ;
+        }
+
+        &__buttons {
+            display : flex;
+
+            &__button {
+                height : 100%;
+                width : 100px;
+            }
+        }
+    }
+}

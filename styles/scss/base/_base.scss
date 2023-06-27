@@ -1,5 +1,23 @@
+$borderColor: rgb(216, 216, 216);
+
 *,*::before,*::after {
     margin : 0;
     padding : 0;
     box-sizing: border-box;
 }
+
+button {
+    border: none;
+    border-right : solid $borderColor 2px;
+    border-left : solid $borderColor 2px;
+}
+
+html {
+    background-color: whitesmoke;
+}
+
+a {
+    color : black;
+    text-decoration: none;
+}
+
