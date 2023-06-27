@@ -1,0 +1,35 @@
+.hamburgermenu {
+  width: 80px;
+  height: 80px;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hamburgermenu-stripe {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+
+  transform-origin: center center;
+  transition: transform 300ms ,background-color 150ms;
+  will-change: transform background-color;
+}
+
+.crossedStripes {
+    #stripe-1 {
+        transform:translateY(16.5px) rotate(45deg);
+    }
+
+    #stripe-2 {
+        background-color: transparent;
+    }
+
+    #stripe-3 {
+        transform:translateY(-16.5px) rotate(-45deg);
+    }
+}

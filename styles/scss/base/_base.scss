@@ -8,8 +8,8 @@ $borderColor: rgb(216, 216, 216);
 
 button {
     border: none;
-    border-right : solid $borderColor 2px;
-    border-left : solid $borderColor 2px;
+    border-right : solid $borderColor 1px;
+    border-left : solid $borderColor 1px;
 }
 
 html {

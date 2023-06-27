@@ -1,22 +1,7 @@
-#secondButton {
-  border-left: none;
-}
-
-.upper__buttons__button {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.upper__contact__item {
-    width : 100%;
-    display : flex;
-    align-items: center;
-
-    span {
-        padding-left : 0.5rem;
-    }
-}
+@import '_buttons';
+@import '_contact';
+@import '_search';
+@import '_hamburgerMenu';
 
 .icon {
   background-color: pink;

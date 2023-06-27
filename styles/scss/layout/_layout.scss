@@ -1,30 +1,53 @@
 $borderColor: rgb(216, 216, 216);
 
 header {
-    width : 100vw;
-    min-height : 15vh;
+  width: 100vw;
+  min-height: 15vh;
 
-    .upper {
-        width : 100%;
-        min-height: 6vh;
-        display : flex;
-        justify-content: space-around;
-        border-bottom: solid $borderColor 2px;
+  .upper {
+    width: 100%;
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid $borderColor 1px;
 
-        &__contact {
-            width : 170px;
-            display : flex;
-            flex-direction: column;
-            justify-content: center ;
-        }
+    &__buttons {
+      display: flex;
 
-        &__buttons {
-            display : flex;
-
-            &__button {
-                height : 100%;
-                width : 100px;
-            }
-        }
+      &__button {
+        height: 100%;
+        width: 100px;
+      }
     }
+  }
+
+  .middle {
+    width : 100%;
+    min-height : 100px;
+
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav {
+    width : 100%;
+    min-height : 500px;
+
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    position : fixed;
+    transform: translateY(-150%);
+    z-index: -1;
+
+    transition: transform 600ms;
+    will-change: transform;
+  }
+
+  .shown {
+    transform: translateY(0);
+  }
 }

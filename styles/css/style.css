@@ -6,8 +6,8 @@
 
 button {
   border: none;
-  border-right: solid rgb(216, 216, 216) 2px;
-  border-left: solid rgb(216, 216, 216) 2px;
+  border-right: solid rgb(216, 216, 216) 1px;
+  border-left: solid rgb(216, 216, 216) 1px;
 }
 
 html {
@@ -28,13 +28,7 @@ header .upper {
   min-height: 6vh;
   display: flex;
   justify-content: space-around;
-  border-bottom: solid rgb(216, 216, 216) 2px;
-}
-header .upper__contact {
-  width: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-bottom: solid rgb(216, 216, 216) 1px;
 }
 header .upper__buttons {
   display: flex;
@@ -42,6 +36,29 @@ header .upper__buttons {
 header .upper__buttons__button {
   height: 100%;
   width: 100px;
+}
+header .middle {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  transform: translateY(-150%);
+  z-index: -1;
+  transition: transform 600ms;
+  will-change: transform;
+}
+header .shown {
+  transform: translateY(0);
 }
 
 #secondButton {
@@ -54,6 +71,12 @@ header .upper__buttons__button {
   justify-content: space-around;
 }
 
+.upper__contact {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .upper__contact__item {
   width: 100%;
   display: flex;
@@ -61,6 +84,39 @@ header .upper__buttons__button {
 }
 .upper__contact__item span {
   padding-left: 0.5rem;
+}
+
+.searchbar {
+  display: none;
+}
+
+.hamburgermenu {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hamburgermenu-stripe {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  transform-origin: center center;
+  transition: transform 300ms, background-color 150ms;
+  will-change: transform background-color;
+}
+
+.crossedStripes #stripe-1 {
+  transform: translateY(16.5px) rotate(45deg);
+}
+.crossedStripes #stripe-2 {
+  background-color: transparent;
+}
+.crossedStripes #stripe-3 {
+  transform: translateY(-16.5px) rotate(-45deg);
 }
 
 .icon {

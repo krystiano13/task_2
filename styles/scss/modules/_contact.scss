@@ -1,0 +1,16 @@
+.upper__contact {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    span {
+      padding-left: 0.5rem;
+    }
+  }
+}
