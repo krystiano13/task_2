@@ -1,3 +1,26 @@
+#firstButton, #secondButton {
+
+  transition: background-color 150ms, color 150ms;
+  will-change: color, background-color;
+
+  .white {
+    display: none;
+  }
+}
+
+#firstButton:hover, #secondButton:hover {
+
+  background-color: #EB316B;
+  color: white;
+
+  .white {
+    display: block;
+  }
+  .pink {
+    display: none;
+  }
+}
+
 #secondButton {
   border-left: none;
 }
@@ -7,4 +30,5 @@
   align-items: center;
   justify-content: space-around;
   background-color: white;
+  cursor: pointer;
 }

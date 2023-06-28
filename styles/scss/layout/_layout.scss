@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: space-around;
     border-bottom: solid $borderColor 1px;
+    background-color: white;
 
     &__buttons {
       display: flex;
@@ -26,8 +27,13 @@ header {
     min-height : 100px;
 
     display : flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    background-color: white;
   }
 
   nav {
@@ -50,4 +56,11 @@ header {
   .shown {
     transform: translateY(0);
   }
+}
+
+$line-width-mobile: calc(100vw - 4rem);
+
+.line-mobile {
+  width : $line-width-mobile;
+  margin-left: 2rem;
 }

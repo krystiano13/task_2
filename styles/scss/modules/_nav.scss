@@ -1,0 +1,29 @@
+$pink: #ECC7D0;
+
+nav {
+    
+    background-color: white;
+
+    .choosen {
+        color : $pink;
+    }
+
+    a {
+        width : calc(100vw - 4rem);
+        min-height : 50px;
+        
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+        -webkit-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+        -moz-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+        will-change: background-color, color;
+    }
+
+    a:hover {
+        background-color: #ECC7D0;
+        color : white;
+    }
+}

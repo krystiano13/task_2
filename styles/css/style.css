@@ -31,6 +31,8 @@ html {
 a {
   color: black;
   text-decoration: none;
+  font-family: "Lato Bold", sans-serif;
+  cursor: pointer;
 }
 
 header {
@@ -43,6 +45,7 @@ header .upper {
   display: flex;
   justify-content: space-around;
   border-bottom: solid rgb(216, 216, 216) 1px;
+  background-color: white;
 }
 header .upper__buttons {
   display: flex;
@@ -55,8 +58,11 @@ header .middle {
   width: 100%;
   min-height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: white;
 }
 header nav {
   width: 100%;
@@ -75,6 +81,30 @@ header .shown {
   transform: translateY(0);
 }
 
+.line-mobile {
+  width: calc(100vw - 4rem);
+  margin-left: 2rem;
+}
+
+#firstButton, #secondButton {
+  transition: background-color 150ms, color 150ms;
+  will-change: color, background-color;
+}
+#firstButton .white, #secondButton .white {
+  display: none;
+}
+
+#firstButton:hover, #secondButton:hover {
+  background-color: #EB316B;
+  color: white;
+}
+#firstButton:hover .white, #secondButton:hover .white {
+  display: block;
+}
+#firstButton:hover .pink, #secondButton:hover .pink {
+  display: none;
+}
+
 #secondButton {
   border-left: none;
 }
@@ -84,12 +114,14 @@ header .shown {
   align-items: center;
   justify-content: space-around;
   background-color: white;
+  cursor: pointer;
 }
 
 .upper__contact {
-  width: 170px;
+  width: 150px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .upper__contact__item {
@@ -99,7 +131,7 @@ header .shown {
 }
 .upper__contact__item span {
   padding-left: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
@@ -115,6 +147,7 @@ header .shown {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .hamburgermenu-stripe {
@@ -173,6 +206,28 @@ header .shown {
 }
 .searchButton__icon {
   width: 75%;
+}
+
+nav {
+  background-color: white;
+}
+nav .choosen {
+  color: #ECC7D0;
+}
+nav a {
+  width: calc(100vw - 4rem);
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  -webkit-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  will-change: background-color, color;
+}
+nav a:hover {
+  background-color: #ECC7D0;
+  color: white;
 }
 
 .icon {
