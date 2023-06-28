@@ -10,7 +10,9 @@
   font-family: "Lato Bold";
   src: url("../../../assets/fonts/Lato-Bold.ttf");
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,6 +23,7 @@ button {
   border: none;
   border-right: solid rgb(216, 216, 216) 1px;
   border-left: solid rgb(216, 216, 216) 1px;
+  font-size: 0.85rem;
 }
 
 html {
@@ -86,22 +89,39 @@ header .shown {
   margin-left: 2rem;
 }
 
-#firstButton, #secondButton {
+@media screen and (max-width: 320px) {
+  header .middle {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  header .upper__buttons__button {
+    width: 80px;
+  }
+  header nav {
+    min-height: 350px;
+  }
+}
+#firstButton,
+#secondButton {
   transition: background-color 150ms, color 150ms;
   will-change: color, background-color;
 }
-#firstButton .white, #secondButton .white {
+#firstButton .white,
+#secondButton .white {
   display: none;
 }
 
-#firstButton:hover, #secondButton:hover {
-  background-color: #EB316B;
+#firstButton:hover,
+#secondButton:hover {
+  background-color: #eb316b;
   color: white;
 }
-#firstButton:hover .white, #secondButton:hover .white {
+#firstButton:hover .white,
+#secondButton:hover .white {
   display: block;
 }
-#firstButton:hover .pink, #secondButton:hover .pink {
+#firstButton:hover .pink,
+#secondButton:hover .pink {
   display: none;
 }
 
@@ -117,6 +137,15 @@ header .shown {
   cursor: pointer;
 }
 
+@media screen and (max-width: 320px) {
+  .upper__buttons__button span {
+    font-size: 0.75rem;
+  }
+  .upper__buttons__button .icon {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
 .upper__contact {
   width: 150px;
   display: flex;
@@ -135,6 +164,19 @@ header .shown {
   font-weight: 500;
 }
 
+@media screen and (max-width: 320px) {
+  .upper__contact {
+    width: 120px;
+  }
+  .upper__contact__item .icon {
+    width: 0.6rem;
+    height: 0.6rem;
+    transform: translateX(0.2rem);
+  }
+  .upper__contact__item span {
+    font-size: 0.6rem;
+  }
+}
 .searchbar {
   display: none;
 }
@@ -169,10 +211,22 @@ header .shown {
   transform: translateY(-16.5px) rotate(-45deg);
 }
 
+@media screen and (max-width: 320px) {
+  .hamburgermenu {
+    padding: 0px;
+    width: 60px;
+    height: 60px;
+  }
+}
 .middle__logo {
   height: 60px;
 }
 
+@media screen and (max-width: 320px) {
+  .middle__logo {
+    height: 45px;
+  }
+}
 .cart {
   position: relative;
   width: 35px;
@@ -208,6 +262,12 @@ header .shown {
   width: 75%;
 }
 
+@media screen and (max-width: 320px) {
+  .searchButton {
+    height: 35px;
+    width: 35px;
+  }
+}
 nav {
   background-color: white;
 }
@@ -230,6 +290,11 @@ nav a:hover {
   color: white;
 }
 
+@media screen and (max-width: 320px) {
+  nav a {
+    min-height: 45px;
+  }
+}
 .icon {
   width: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

@@ -17,3 +17,22 @@
     }
   }
 }
+
+@media screen and (max-width : 320px) {
+  .upper__contact {
+    width : 120px;
+
+    &__item {
+
+      .icon {
+        width : 0.6rem;
+        height : 0.6rem;
+        transform: translateX(0.2rem);
+      }
+
+      span {
+        font-size : 0.6rem;
+      }
+    }
+  }
+}

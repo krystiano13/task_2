@@ -35,3 +35,11 @@
         transform:translateY(-16.5px) rotate(-45deg);
     }
 }
+
+@media screen and (max-width : 320px) {
+  .hamburgermenu {
+    padding : 0px;
+    width : 60px;
+    height : 60px;
+  }
+}

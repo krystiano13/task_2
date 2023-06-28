@@ -1,5 +1,5 @@
-#firstButton, #secondButton {
-
+#firstButton,
+#secondButton {
   transition: background-color 150ms, color 150ms;
   will-change: color, background-color;
 
@@ -8,9 +8,9 @@
   }
 }
 
-#firstButton:hover, #secondButton:hover {
-
-  background-color: #EB316B;
+#firstButton:hover,
+#secondButton:hover {
+  background-color: #eb316b;
   color: white;
 
   .white {
@@ -31,4 +31,17 @@
   justify-content: space-around;
   background-color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .upper__buttons__button {
+    span {
+      font-size: 0.75rem;
+    }
+
+    .icon {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+  }
 }
