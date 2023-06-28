@@ -1,0 +1,31 @@
+$pink: #ECC7D0;
+
+.cart {
+    position: relative;
+    width : 35px;
+    height: 40px;
+
+    img {
+        height : 40px;
+        position : absolute;
+    }
+
+    &__count {
+        background-color: $pink;
+        color : white;
+        font-weight: 600;
+        width : 1.4rem;
+        height : 1.4rem;
+
+        transform: translate(1.4rem,1.5rem);
+
+        font-size: 0.8rem;
+        border-radius: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position : absolute;
+    }
+}
