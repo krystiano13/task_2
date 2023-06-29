@@ -40,15 +40,18 @@
       <div class="middle">
         <img class="middle__logo" alt="logo" src="./assets/images/logo__aurora-box.png" />
         <div class="searchbar">
-          <input class="searchbar-input" placeholder="Co chcesz kupić ?" />
-          <img alt="search icon" src="./assets/images/icon__lens.png" />
+          <input class="searchbar__input" placeholder="Co chcesz kupić ?" />
+          <img alt="search icon" class="searchbar__icon" src="./assets/images/icon__lens.png" />
         </div>
         <button class="searchButton">
           <img class="searchButton__icon" alt="search Icon" src="./assets/images/icon__lens.png"/>
         </button>
         <div class="cart">
-          <img src="./assets/images/icon__basket.png" alt="cart icon" />
-          <label class="cart__count">2</label>
+          <div class="cart__icons">
+            <img src="./assets/images/icon__basket.png" alt="cart icon" />
+            <label class="cart__icons__count">2</label>
+          </div>
+          <label class="cart__text">Twój koszyk</label>
         </div>
         <div class="hamburgermenu ">
           <div id="stripe-1" class="hamburgermenu-stripe"></div>
@@ -71,6 +74,7 @@
         <a href="">BLOG</a>
         <a href="">KONTAKT</a>
       </nav>
+      <hr class="line-desktop">
     </header>
   </body>
 </html>

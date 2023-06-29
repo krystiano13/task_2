@@ -1,31 +1,91 @@
-$pink: #ECC7D0;
+$pink: #ecc7d0;
 
 .cart {
-    position: relative;
-    width : 35px;
+  position: relative;
+  width: 35px;
+  height: 40px;
+
+  &__text {
+    display: none;
+  }
+
+  &__icons {
+    width: 35px;
     height: 40px;
 
     img {
-        height : 40px;
-        position : absolute;
+      height: 40px;
+      position: absolute;
     }
 
     &__count {
-        background-color: $pink;
-        color : white;
-        font-weight: 600;
-        width : 1.4rem;
-        height : 1.4rem;
+      background-color: $pink;
+      color: white;
+      font-weight: 600;
+      width: 1.4rem;
+      height: 1.4rem;
 
-        transform: translate(1.4rem,1.5rem);
+      transform: translate(1.4rem, 1.5rem);
 
-        font-size: 0.8rem;
-        border-radius: 100%;
+      font-size: 0.8rem;
+      border-radius: 100%;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        position : absolute;
+      position: absolute;
     }
+  }
+
+  @media screen and (min-width: 1100px) {
+    min-width: 125px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__text {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
+    &__icons {
+      img {
+        height: 30px;
+      }
+
+      &__count {
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 0.65rem;
+        transform: translate(1.1rem, 1rem);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    min-width: 160px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__text {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    &__icons {
+      margin-right : 0.6rem;
+      img {
+        height: 40px;
+      }
+
+      &__count {
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 0.65rem;
+        transform: translate(1.3rem, 1.4rem);
+      }
+    }
+  }
 }

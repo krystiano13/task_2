@@ -5,6 +5,10 @@ header {
   min-height: 100px;
   overflow: auto;
 
+  .line-desktop {
+    display: none;
+  }
+
   .upper {
     width: 100%;
     min-height: 55px;
@@ -124,6 +128,53 @@ header {
     .line-mobile {
       width: calc(100vw - 10rem);
       margin-left: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  header {
+    .upper {
+      min-height: 38px;
+      justify-content: space-between;
+      padding-left: 10rem;
+      padding-right: 10rem;
+
+      &__buttons {
+        &__button {
+          width: 120px;
+          display: flex;
+          justify-content: space-evenly;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    .middle {
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+
+    .searchForm,
+    .line-mobile {
+      display: none;
+    }
+
+    nav {
+      flex-direction: row;
+      transform: translateY(0%);
+      position: static;
+      justify-content: space-between;
+      min-height: 50px;
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+
+    .line-desktop {
+      display: block;
+      width: calc(100vw - 20rem);
+      margin-left : 10rem;
     }
   }
 }

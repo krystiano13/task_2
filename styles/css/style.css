@@ -43,6 +43,9 @@ header {
   min-height: 100px;
   overflow: auto;
 }
+header .line-desktop {
+  display: none;
+}
 header .upper {
   width: 100%;
   min-height: 55px;
@@ -133,6 +136,43 @@ header .shown {
     margin-left: 5rem;
   }
 }
+@media screen and (min-width: 1100px) {
+  header .upper {
+    min-height: 38px;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  header .upper__buttons__button {
+    width: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  header .middle {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  header .searchForm,
+  header .line-mobile {
+    display: none;
+  }
+  header nav {
+    flex-direction: row;
+    transform: translateY(0%);
+    position: static;
+    justify-content: space-between;
+    min-height: 50px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  header .line-desktop {
+    display: block;
+    width: calc(100vw - 20rem);
+    margin-left: 10rem;
+  }
+}
 #firstButton,
 #secondButton {
   transition: background-color 150ms, color 150ms;
@@ -171,11 +211,10 @@ header .shown {
 
 @media screen and (max-width: 320px) {
   .upper__buttons__button span {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
   .upper__buttons__button .icon {
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 0.9rem;
   }
 }
 @media screen and (min-width: 550px) {
@@ -183,11 +222,27 @@ header .shown {
     font-size: 1.25rem;
   }
   .upper__buttons__button .icon {
+    width: 1.5rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .upper__buttons__button span {
+    font-size: 0.65rem;
+  }
+  .upper__buttons__button .icon {
+    width: 0.8rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .upper__buttons__button span {
+    font-size: 0.75rem;
+  }
+  .upper__buttons__button .icon {
     width: 1rem;
   }
 }
 .upper__contact {
-  width: 150px;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,7 +262,7 @@ header .shown {
 
 @media screen and (max-width: 320px) {
   .upper__contact {
-    width: 120px;
+    min-width: 120px;
   }
   .upper__contact__item .icon {
     width: 0.6rem;
@@ -220,7 +275,7 @@ header .shown {
 }
 @media screen and (min-width: 550px) {
   .upper__contact {
-    width: 320px;
+    min-width: 320px;
   }
   .upper__contact__item {
     padding-left: 0.5rem;
@@ -231,10 +286,72 @@ header .shown {
     font-weight: 500;
   }
 }
+@media screen and (min-width: 1100px) {
+  .upper__contact {
+    min-width: 220px;
+    flex-direction: row;
+  }
+  .upper__contact__item {
+    padding-left: 0.5rem;
+  }
+  .upper__contact__item span {
+    padding-left: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .upper__contact {
+    min-width: 270px;
+    flex-direction: row;
+  }
+  .upper__contact__item {
+    padding-left: 0.5rem;
+  }
+  .upper__contact__item span {
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
 .searchbar {
   display: none;
 }
 
+@media screen and (min-width: 1100px) {
+  .searchbar {
+    display: flex;
+    min-width: 400px;
+    justify-content: space-between;
+    border-bottom: solid #555 2px;
+    height: 30px;
+  }
+  .searchbar__icon {
+    height: 20px;
+  }
+  .searchbar__input {
+    border: none;
+    outline: none;
+  }
+  .searchbar__input::-moz-placeholder {
+    color: rgb(172, 172, 172);
+  }
+  .searchbar__input::placeholder {
+    color: rgb(172, 172, 172);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .searchbar {
+    min-width: 500px;
+    height: 40px;
+  }
+  .searchbar__icon {
+    height: 24px;
+  }
+  .searchbar__input {
+    font-size: 0.85rem;
+  }
+}
 .hamburgermenu {
   width: 80px;
   height: 80px;
@@ -272,6 +389,11 @@ header .shown {
     height: 60px;
   }
 }
+@media screen and (min-width: 1100px) {
+  .hamburgermenu {
+    display: none;
+  }
+}
 .middle__logo {
   height: 60px;
 }
@@ -281,17 +403,36 @@ header .shown {
     height: 45px;
   }
 }
+@media screen and (min-width: 1100px) {
+  .middle__logo {
+    height: 50px;
+    padding-right: 100px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .middle__logo {
+    height: 55px;
+    padding-right: 100px;
+  }
+}
 .cart {
   position: relative;
   width: 35px;
   height: 40px;
 }
-.cart img {
+.cart__text {
+  display: none;
+}
+.cart__icons {
+  width: 35px;
+  height: 40px;
+}
+.cart__icons img {
   height: 40px;
   position: absolute;
 }
-.cart__count {
-  background-color: #ECC7D0;
+.cart__icons__count {
+  background-color: #ecc7d0;
   color: white;
   font-weight: 600;
   width: 1.4rem;
@@ -303,6 +444,51 @@ header .shown {
   justify-content: center;
   align-items: center;
   position: absolute;
+}
+@media screen and (min-width: 1100px) {
+  .cart {
+    min-width: 125px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cart__text {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .cart__icons img {
+    height: 30px;
+  }
+  .cart__icons__count {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.65rem;
+    transform: translate(1.1rem, 1rem);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .cart {
+    min-width: 160px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cart__text {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .cart__icons {
+    margin-right: 0.6rem;
+  }
+  .cart__icons img {
+    height: 40px;
+  }
+  .cart__icons__count {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.65rem;
+    transform: translate(1.3rem, 1.4rem);
+  }
 }
 
 .searchButton {
@@ -322,11 +508,16 @@ header .shown {
     width: 35px;
   }
 }
+@media screen and (min-width: 1100px) {
+  .searchButton {
+    display: none;
+  }
+}
 nav {
   background-color: white;
 }
 nav .choosen {
-  color: #ECC7D0;
+  color: #ecc7d0;
 }
 nav a {
   width: calc(100vw - 4rem);
@@ -341,7 +532,7 @@ nav a {
   will-change: background-color, color;
 }
 nav a:hover {
-  background-color: #ECC7D0;
+  background-color: #ecc7d0;
   color: white;
 }
 
@@ -354,6 +545,28 @@ nav a:hover {
   nav a {
     min-height: 65px;
     font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  nav a {
+    min-height: 65px;
+    font-size: 0.75rem;
+    width: auto;
+  }
+  nav a:hover {
+    color: #ecc7d0;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 1500px) {
+  nav a {
+    min-height: 65px;
+    font-size: 0.9rem;
+    width: auto;
+  }
+  nav a:hover {
+    color: #ecc7d0;
+    background-color: transparent;
   }
 }
 .searchForm {
@@ -376,10 +589,5 @@ nav a:hover {
   }
 }
 .icon {
-  width: 0.8rem;
-}
-@media screen and (min-width: 550px) {
-  .icon {
-    width: 1rem;
-  }
+  width: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

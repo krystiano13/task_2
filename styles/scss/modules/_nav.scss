@@ -1,46 +1,78 @@
-$pink: #ECC7D0;
+$pink: #ecc7d0;
 
 nav {
-    background-color: white;
+  background-color: white;
 
-    .choosen {
-        color : $pink;
-    }
+  .choosen {
+    color: $pink;
+  }
 
+  a {
+    width: calc(100vw - 4rem);
+    min-height: 40px;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    -webkit-transition: background-color 250ms ease-in-out,
+      color 250ms ease-in-out;
+    -moz-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    will-change: background-color, color;
+  }
+
+  a:hover {
+    background-color: #ecc7d0;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav {
     a {
-        width : calc(100vw - 4rem);
-        min-height : 40px;
-        font-size : 1rem;
-        
-        display : flex;
-        justify-content: center;
-        align-items: center;
-        
-        transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-        -webkit-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-        -moz-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-        will-change: background-color, color;
+      min-height: 45px;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  nav {
+    a {
+      min-height: 65px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  nav {
+    a {
+      min-height: 65px;
+      font-size: 0.75rem;
+      width: auto;
     }
 
     a:hover {
-        background-color: #ECC7D0;
-        color : white;
+      color: #ecc7d0;
+      background-color: transparent;
     }
+  }
 }
 
-@media screen and (max-width : 320px) {
-    nav {
-        a {
-            min-height: 45px;
-        }
+@media screen and (min-width: 1500px) {
+  nav {
+    a {
+      min-height: 65px;
+      font-size: 0.9rem;
+      width: auto;
     }
+
+    a:hover {
+      color: #ecc7d0;
+      background-color: transparent;
+    }
+  }
 }
 
-@media screen and (min-width : 550px) {
-    nav {
-        a {
-            min-height : 65px;
-            font-size : 1.2rem;
-        }
-    }
-}

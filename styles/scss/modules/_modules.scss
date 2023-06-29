@@ -9,9 +9,5 @@
 @import "_searchFormMobile";
 
 .icon {
-  width: 0.8rem;
-
-  @media screen and (min-width: 550px) {
-    width: 1rem;
-  }
+  width: 0.9rem;
 }
