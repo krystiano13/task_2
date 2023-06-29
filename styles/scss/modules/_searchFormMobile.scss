@@ -1,0 +1,11 @@
+.searchForm {
+    background-color: white;
+    input {
+        width : calc(100vw - 4rem);
+        min-height : 40px;
+        outline : none;
+        font-size : 1.1rem;
+        border : none;
+        border-bottom : solid black 1px;
+    }
+}

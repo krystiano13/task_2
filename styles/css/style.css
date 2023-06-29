@@ -40,7 +40,8 @@ a {
 
 header {
   width: 100vw;
-  min-height: 15vh;
+  min-height: 100px;
+  overflow: auto;
 }
 header .upper {
   width: 100%;
@@ -66,6 +67,21 @@ header .middle {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   background-color: white;
+}
+header .searchForm {
+  width: 100%;
+  min-height: 60px;
+  position: fixed;
+  transform: translateY(-400%);
+  transition: 500ms transform;
+  will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+header .searchForm-visible {
+  transform: translateY(0%);
 }
 header nav {
   width: 100%;
@@ -295,6 +311,18 @@ nav a:hover {
     min-height: 45px;
   }
 }
+.searchForm {
+  background-color: white;
+}
+.searchForm input {
+  width: calc(100vw - 4rem);
+  min-height: 40px;
+  outline: none;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: solid black 1px;
+}
+
 .icon {
   width: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
