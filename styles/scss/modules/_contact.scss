@@ -9,29 +9,44 @@
     width: 100%;
     display: flex;
     align-items: center;
+    padding-left: 0.1rem;
 
     span {
       padding-left: 0.5rem;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 500;
     }
   }
 }
 
-@media screen and (max-width : 320px) {
+@media screen and (max-width: 320px) {
   .upper__contact {
-    width : 120px;
+    width: 120px;
 
     &__item {
-
       .icon {
-        width : 0.6rem;
-        height : 0.6rem;
+        width: 0.6rem;
+        height: 0.6rem;
         transform: translateX(0.2rem);
       }
 
       span {
-        font-size : 0.6rem;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .upper__contact {
+    width: 320px;
+
+    &__item {
+      padding-left: 0.5rem;
+      span {
+        padding-left: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
       }
     }
   }

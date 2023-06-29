@@ -1,13 +1,17 @@
-@import '_buttons';
-@import '_contact';
-@import '_search';
-@import '_hamburgerMenu';
-@import '_logo';
-@import '_cart';
-@import '_searchButton';
-@import '_nav';
-@import '_searchFormMobile';
+@import "_buttons";
+@import "_contact";
+@import "_search";
+@import "_hamburgerMenu";
+@import "_logo";
+@import "_cart";
+@import "_searchButton";
+@import "_nav";
+@import "_searchFormMobile";
 
 .icon {
-  width : 0.8rem;
+  width: 0.8rem;
+
+  @media screen and (min-width: 550px) {
+    width: 1rem;
+  }
 }

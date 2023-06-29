@@ -9,3 +9,13 @@
         border-bottom : solid black 1px;
     }
 }
+
+@media screen and (min-width : 550px) {
+    .searchForm {
+        input {
+            width : calc(100vw - 10rem);
+            min-height: 50px;
+            font-size : 1.25rem;
+        }
+    }
+}

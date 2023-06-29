@@ -45,7 +45,7 @@ header {
 }
 header .upper {
   width: 100%;
-  min-height: 6vh;
+  min-height: 55px;
   display: flex;
   justify-content: space-around;
   border-bottom: solid rgb(216, 216, 216) 1px;
@@ -85,7 +85,7 @@ header .searchForm-visible {
 }
 header nav {
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,6 +115,22 @@ header .shown {
   }
   header nav {
     min-height: 350px;
+  }
+}
+@media screen and (min-width: 550px) {
+  header .upper {
+    min-height: 70px;
+  }
+  header .upper__buttons__button {
+    width: 150px;
+  }
+  header .middle {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  header .line-mobile {
+    width: calc(100vw - 10rem);
+    margin-left: 5rem;
   }
 }
 #firstButton,
@@ -162,6 +178,14 @@ header .shown {
     height: 0.7rem;
   }
 }
+@media screen and (min-width: 550px) {
+  .upper__buttons__button span {
+    font-size: 1.25rem;
+  }
+  .upper__buttons__button .icon {
+    width: 1rem;
+  }
+}
 .upper__contact {
   width: 150px;
   display: flex;
@@ -173,10 +197,11 @@ header .shown {
   width: 100%;
   display: flex;
   align-items: center;
+  padding-left: 0.1rem;
 }
 .upper__contact__item span {
   padding-left: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -191,6 +216,19 @@ header .shown {
   }
   .upper__contact__item span {
     font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 550px) {
+  .upper__contact {
+    width: 320px;
+  }
+  .upper__contact__item {
+    padding-left: 0.5rem;
+  }
+  .upper__contact__item span {
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }
 .searchbar {
@@ -292,7 +330,8 @@ nav .choosen {
 }
 nav a {
   width: calc(100vw - 4rem);
-  min-height: 50px;
+  min-height: 40px;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,6 +350,12 @@ nav a:hover {
     min-height: 45px;
   }
 }
+@media screen and (min-width: 550px) {
+  nav a {
+    min-height: 65px;
+    font-size: 1.2rem;
+  }
+}
 .searchForm {
   background-color: white;
 }
@@ -323,6 +368,18 @@ nav a:hover {
   border-bottom: solid black 1px;
 }
 
+@media screen and (min-width: 550px) {
+  .searchForm input {
+    width: calc(100vw - 10rem);
+    min-height: 50px;
+    font-size: 1.25rem;
+  }
+}
 .icon {
   width: 0.8rem;
+}
+@media screen and (min-width: 550px) {
+  .icon {
+    width: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
