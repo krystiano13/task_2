@@ -197,6 +197,46 @@ header .shown {
     margin-left: 20rem;
   }
 }
+@media screen and (min-width: 2800px) {
+  header .upper,
+  header .middle,
+  header nav {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  header nav {
+    min-height: 100px;
+  }
+  header .upper {
+    min-height: 100px;
+  }
+  header .upper__buttons__button {
+    width: 240px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  header .middle {
+    min-height: 250px;
+  }
+  header .line-desktop {
+    width: 88vw;
+    margin-left: 6vw;
+  }
+}
+@media screen and (min-width: 2800px) {
+  header .upper,
+  header .middle,
+  header nav {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  header .line-desktop {
+    width: 70vw;
+    margin-left: 15vw;
+  }
+}
 #firstButton,
 #secondButton {
   transition: background-color 150ms, color 150ms;
@@ -263,6 +303,14 @@ header .shown {
   }
   .upper__buttons__button .icon {
     width: 1rem;
+  }
+}
+@media screen and (min-width: 2800px) {
+  .upper__buttons__button span {
+    font-size: 1.7rem;
+  }
+  .upper__buttons__button .icon {
+    width: 1.8rem;
   }
 }
 .upper__contact {
@@ -338,6 +386,18 @@ header .shown {
     font-weight: 500;
   }
 }
+@media screen and (min-width: 2800px) {
+  .upper__contact {
+    min-width: 650px;
+  }
+  .upper__contact__item {
+    padding-left: 1rem;
+  }
+  .upper__contact__item span {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
 .searchbar {
   display: none;
 }
@@ -374,6 +434,18 @@ header .shown {
   }
   .searchbar__input {
     font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 2800px) {
+  .searchbar {
+    min-width: 1000px;
+    height: 80px;
+  }
+  .searchbar__icon {
+    height: 48px;
+  }
+  .searchbar__input {
+    font-size: 1.7rem;
   }
 }
 .hamburgermenu {
@@ -437,6 +509,12 @@ header .shown {
   .middle__logo {
     height: 55px;
     padding-right: 100px;
+  }
+}
+@media screen and (min-width: 2800px) {
+  .middle__logo {
+    height: 150px;
+    padding-right: 250px;
   }
 }
 .cart {
@@ -503,6 +581,30 @@ header .shown {
   }
   .cart__icons__count {
     transform: translate(1.2rem, 1.3rem);
+  }
+}
+@media screen and (min-width: 2800px) {
+  .cart {
+    min-width: 420px;
+  }
+  .cart__text {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .cart__icons {
+    margin-right: 0.6rem;
+    height: 80px;
+    margin-right: 2rem;
+  }
+  .cart__icons img {
+    height: 70px;
+  }
+  .cart__icons__count {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1.3rem;
+    transform: translate(2rem, 2.2rem);
   }
 }
 
@@ -584,6 +686,12 @@ nav a:hover {
     background-color: transparent;
   }
 }
+@media screen and (min-width: 2800px) {
+  nav a {
+    min-height: 120px;
+    font-size: 1.8rem;
+  }
+}
 .searchForm {
   background-color: white;
 }
@@ -605,4 +713,10 @@ nav a:hover {
 }
 .icon {
   width: 0.9rem;
+}
+
+@media screen and (min-width: 2800px) {
+  .icon {
+    width: 1.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

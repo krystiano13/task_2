@@ -39,3 +39,18 @@
         }
     }
 }
+
+@media screen and (min-width : 2800px) {
+    .searchbar {
+        min-width : 1000px;
+        height : 80px;
+
+        &__icon {
+            height : 48px;
+        }
+
+        &__input {
+            font-size: 1.7rem;
+        }
+    }
+}

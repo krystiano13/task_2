@@ -76,3 +76,14 @@ nav {
   }
 }
 
+@media screen and (min-width: 2800px) {
+  nav {
+    a {
+      min-height: 120px;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+

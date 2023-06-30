@@ -40,7 +40,6 @@ $pink: #ecc7d0;
     }
   }
 
-
   @media screen and (min-width: 1100px) {
     min-width: 160px;
     display: flex;
@@ -76,6 +75,34 @@ $pink: #ecc7d0;
 
       &__count {
         transform: translate(1.2rem, 1.3rem);
+      }
+    }
+  }
+
+  @media screen and (min-width: 2800px) {
+    min-width: 420px;
+
+    &__text {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+
+    &__icons {
+      margin-right: 0.6rem;
+      height: 80px;
+      margin-right: 2rem;
+
+      img {
+        height: 70px;
+      }
+
+      &__count {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 1.3rem;
+        transform: translate(2rem, 2.2rem);
       }
     }
   }

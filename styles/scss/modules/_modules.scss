@@ -11,3 +11,9 @@
 .icon {
   width: 0.9rem;
 }
+
+@media screen and (min-width : 2800px) {
+  .icon {
+    width : 1.8rem;
+  }
+}

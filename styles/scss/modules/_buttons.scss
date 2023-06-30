@@ -80,3 +80,16 @@
     }
   }
 }
+
+@media screen and (min-width: 2800px) {
+  .upper__buttons__button {
+    span {
+      font-size: 1.7rem;
+    }
+
+    .icon {
+      width: 1.8rem;
+    }
+  }
+}
+

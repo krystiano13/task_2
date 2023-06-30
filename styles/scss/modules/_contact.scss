@@ -84,5 +84,21 @@
   }
 }
 
+@media screen and (min-width: 2800px) {
+  .upper__contact {
+    min-width: 650px;
+
+    &__item {
+      padding-left: 1rem;
+      span {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+
 
 
