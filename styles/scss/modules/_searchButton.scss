@@ -10,7 +10,14 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 200px) {
+  .searchButton {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) and (min-width : 280px) {
   .searchButton {
     height: 35px;
     width: 35px;

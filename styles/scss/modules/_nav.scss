@@ -9,7 +9,6 @@ nav {
 
   a {
     width: calc(100vw - 4rem);
-    min-height: 40px;
     font-size: 1rem;
 
     display: flex;
@@ -29,10 +28,23 @@ nav {
   }
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 279px) and (min-width : 200px) {
   nav {
     a {
-      min-height: 45px;
+      font-size: 3vh;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) and (min-width : 280px) {
+  nav {
+    a {
+      min-height: 40px;
+      font-size: 1rem;
+      min-height: 25px;
+      height: auto;
     }
   }
 }
