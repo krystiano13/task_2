@@ -8,6 +8,9 @@ header {
 
   .line-desktop {
     display: none;
+    background-color: $borderColor;
+    border: none;
+    height: 1px;
   }
 
   .upper {
@@ -65,7 +68,7 @@ header {
 
   nav {
     width: 100%;
-    min-height: 400px;  
+    min-height: 400px;
 
     display: flex;
     flex-direction: column;
@@ -89,6 +92,9 @@ header {
 .line-mobile {
   width: calc(100vw - 4rem);
   margin-left: 2rem;
+  background-color: $borderColor;
+  border: none;
+  height: 1px;
 }
 
 @media screen and (max-width: 280px) and (min-width: 200px) {
