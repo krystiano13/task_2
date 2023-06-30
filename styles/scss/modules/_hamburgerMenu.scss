@@ -10,6 +10,11 @@
   justify-content: space-evenly;
 
   cursor: pointer;
+
+  @media screen and (min-width: 0\0) {
+    justify-content: space-around;
+    padding: 15px;
+  }
 }
 
 .hamburgermenu-stripe {
@@ -18,29 +23,29 @@
   background-color: black;
 
   transform-origin: center center;
-  transition: transform 300ms ,background-color 150ms;
-  will-change: transform background-color;
+  transition: transform 300ms, background-color 150ms;
+  will-change: transform, background-color;
 }
 
 .crossedStripes {
-    #stripe-1 {
-        transform:translateY(16.5px) rotate(45deg);
-    }
+  #stripe-1 {
+    transform: translateY(16.5px) rotate(45deg);
+  }
 
-    #stripe-2 {
-        background-color: transparent;
-    }
+  #stripe-2 {
+    background-color: transparent;
+  }
 
-    #stripe-3 {
-        transform:translateY(-16.5px) rotate(-45deg);
-    }
+  #stripe-3 {
+    transform: translateY(-16.5px) rotate(-45deg);
+  }
 }
 
-@media screen and (max-width : 320px) {
+@media screen and (max-width: 320px) {
   .hamburgermenu {
-    padding : 0px;
-    width : 60px;
-    height : 60px;
+    padding: 0px;
+    width: 60px;
+    height: 60px;
   }
 }
 

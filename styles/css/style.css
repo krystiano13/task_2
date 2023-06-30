@@ -1,22 +1,15 @@
-@font-face {
-  font-family: "Lato Light";
-  src: url("../../../assets/fonts/Lato-Light.ttf");
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../../../assets/fonts/Lato-Regular.ttf");
-}
-@font-face {
-  font-family: "Lato Bold";
-  src: url("../../../assets/fonts/Lato-Bold.ttf");
-}
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato";
+  border: 0;
+  outline: 0;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Lato", sans-serif;
 }
 
 button {
@@ -28,14 +21,13 @@ button {
 
 html {
   background-color: white;
-  font-family: "Lato", sans-serif;
   overflow-x: hidden;
 }
 
 a {
   color: black;
   text-decoration: none;
-  font-family: "Lato Bold", sans-serif;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -45,11 +37,21 @@ header {
   overflow-y: auto;
   overflow-x: hidden;
 }
+@media screen and (min-width: 0\0 ) {
+  header {
+    height: auto;
+  }
+}
 header .line-desktop {
   display: none;
   background-color: rgb(216, 216, 216);
   border: none;
   height: 1px;
+}
+@media screen and (min-width: 0\0 ) {
+  header .line-desktop {
+    margin-left: 0rem;
+  }
 }
 header .upper {
   width: 100%;
@@ -58,6 +60,11 @@ header .upper {
   justify-content: space-around;
   border-bottom: solid rgb(216, 216, 216) 1px;
   background-color: white;
+}
+@media screen and (min-width: 0\0 ) {
+  header .upper {
+    height: auto;
+  }
 }
 header .upper__buttons {
   display: flex;
@@ -105,7 +112,7 @@ header nav {
   will-change: transform;
 }
 header .shown {
-  position: relative;
+  position: absolute;
   transform: translateY(0);
 }
 
@@ -115,6 +122,11 @@ header .shown {
   background-color: rgb(216, 216, 216);
   border: none;
   height: 1px;
+}
+@media screen and (min-width: 0\0 ) {
+  .line-mobile {
+    margin-left: 0rem;
+  }
 }
 
 @media screen and (max-width: 280px) and (min-width: 200px) {
@@ -135,8 +147,20 @@ header .shown {
   header .upper__buttons {
     width: 120px;
   }
+}
+@media screen and (max-width: 280px) and (min-width: 200px) and (min-width: 0\0 ) {
+  header .upper__buttons {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 280px) and (min-width: 200px) {
   header .upper__buttons__button {
     width: 60px;
+  }
+}
+@media screen and (max-width: 280px) and (min-width: 200px) and (min-width: 0\0 ) {
+  header .upper__buttons__button {
+    width: 70px;
   }
 }
 @media screen and (max-width: 320px) and (min-width: 280px) {
@@ -163,16 +187,32 @@ header .shown {
   header .upper {
     min-height: 70px;
   }
+}
+@media screen and (min-width: 650px) and (min-width: 0\0 ) {
+  header .upper {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 650px) {
   header .upper__buttons__button {
     width: 150px;
   }
+}
+@media screen and (min-width: 650px) {
   header .middle {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+}
+@media screen and (min-width: 650px) {
   header .line-mobile {
     width: calc(100vw - 10rem);
     margin-left: 5rem;
+  }
+}
+@media screen and (min-width: 650px) and (min-width: 0\0 ) {
+  header .line-mobile {
+    margin-left: 0rem;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -182,6 +222,13 @@ header .shown {
     padding-left: 9rem;
     padding-right: 9rem;
   }
+}
+@media screen and (min-width: 1100px) and (min-width: 0\0 ) {
+  header .upper {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1100px) {
   header .upper__buttons__button {
     width: 120px;
     display: flex;
@@ -189,14 +236,25 @@ header .shown {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+@media screen and (min-width: 1100px) {
   header .middle {
     padding-left: 9rem;
     padding-right: 9rem;
   }
+}
+@media screen and (min-width: 1100px) and (min-width: 0\0 ) {
+  header .middle {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1100px) {
   header .searchForm,
   header .line-mobile {
     display: none;
   }
+}
+@media screen and (min-width: 1100px) {
   header nav {
     flex-direction: row;
     transform: translateY(0%);
@@ -206,10 +264,24 @@ header .shown {
     padding-left: 9rem;
     padding-right: 9rem;
   }
+}
+@media screen and (min-width: 1100px) and (min-width: 0\0 ) {
+  header nav {
+    background-color: transparent;
+    position: fixed;
+  }
+}
+@media screen and (min-width: 1100px) {
   header .line-desktop {
     display: block;
     width: calc(100vw - 18rem);
     margin-left: 9rem;
+  }
+}
+@media screen and (min-width: 1100px) and (min-width: 0\0 ) {
+  header .line-desktop {
+    margin-left: 0rem;
+    margin-top: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -224,6 +296,11 @@ header .shown {
     margin-left: 13rem;
   }
 }
+@media screen and (min-width: 1200px) and (min-width: 0\0 ) {
+  header .line-desktop {
+    margin-left: 0rem;
+  }
+}
 @media screen and (min-width: 1500px) {
   header .upper,
   header .middle,
@@ -234,6 +311,11 @@ header .shown {
   header .line-desktop {
     width: calc(100vw - 40rem);
     margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 1500px) and (min-width: 0\0 ) {
+  header .line-desktop {
+    margin-left: 0rem;
   }
 }
 @media screen and (min-width: 2800px) {
@@ -359,6 +441,13 @@ header .shown {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 0\0 ) {
+  .upper__contact {
+    width: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
 .upper__contact__item {
   width: 100%;
   display: flex;
@@ -402,6 +491,14 @@ header .shown {
     min-width: 220px;
     flex-direction: row;
   }
+}
+@media screen and (min-width: 1100px) and (min-width: 0\0 ) {
+  .upper__contact {
+    width: 320px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1100px) {
   .upper__contact__item {
     padding-left: 0.5rem;
   }
@@ -497,6 +594,12 @@ header .shown {
   justify-content: space-evenly;
   cursor: pointer;
 }
+@media screen and (min-width: 0\0 ) {
+  .hamburgermenu {
+    justify-content: space-around;
+    padding: 15px;
+  }
+}
 
 .hamburgermenu-stripe {
   width: 40px;
@@ -504,7 +607,7 @@ header .shown {
   background-color: black;
   transform-origin: center center;
   transition: transform 300ms, background-color 150ms;
-  will-change: transform background-color;
+  will-change: transform, background-color;
 }
 
 .crossedStripes #stripe-1 {
@@ -687,6 +790,8 @@ nav .choosen {
   color: #ecc7d0;
 }
 nav a {
+  cursor: pointer;
+  min-height: 30px;
   width: calc(100vw - 4rem);
   font-size: 1rem;
   display: flex;
@@ -696,6 +801,12 @@ nav a {
   -webkit-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   -moz-transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   will-change: background-color, color;
+}
+@media screen and (min-width: 0\0 ) {
+  nav a {
+    position: relative;
+    height: 66px;
+  }
 }
 nav a:hover {
   background-color: #ecc7d0;

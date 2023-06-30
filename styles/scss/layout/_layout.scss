@@ -3,6 +3,11 @@ $borderColor: rgb(216, 216, 216);
 header {
   width: 100vw;
   min-height: 100px;
+
+  @media screen and (min-width: 0\0) {
+    height: auto;
+  }
+
   overflow-y: auto;
   overflow-x: hidden;
 
@@ -11,6 +16,10 @@ header {
     background-color: $borderColor;
     border: none;
     height: 1px;
+
+    @media screen and (min-width: 0\0) {
+      margin-left: 0rem;
+    }
   }
 
   .upper {
@@ -20,6 +29,10 @@ header {
     justify-content: space-around;
     border-bottom: solid $borderColor 1px;
     background-color: white;
+
+    @media screen and (min-width: 0\0) {
+      height: auto;
+    }
 
     &__buttons {
       display: flex;
@@ -84,7 +97,7 @@ header {
   }
 
   .shown {
-    position: relative;
+    position: absolute;
     transform: translateY(0);
   }
 }
@@ -95,6 +108,10 @@ header {
   background-color: $borderColor;
   border: none;
   height: 1px;
+
+  @media screen and (min-width: 0\0) {
+    margin-left: 0rem;
+  }
 }
 
 @media screen and (max-width: 280px) and (min-width: 200px) {
@@ -118,8 +135,15 @@ header {
     .upper {
       &__buttons {
         width: 120px;
+
+        @media screen and (min-width: 0\0) {
+          width: 130px;
+        }
         &__button {
           width: 60px;
+          @media screen and (min-width: 0\0) {
+            width: 70px;
+          }
         }
       }
     }
@@ -156,6 +180,10 @@ header {
     .upper {
       min-height: 70px;
 
+      @media screen and (min-width: 0\0) {
+        height: 40px;
+      }
+
       &__buttons {
         &__button {
           width: 150px;
@@ -171,6 +199,9 @@ header {
     .line-mobile {
       width: calc(100vw - 10rem);
       margin-left: 5rem;
+      @media screen and (min-width: 0\0) {
+        margin-left: 0rem;
+      }
     }
   }
 }
@@ -182,6 +213,10 @@ header {
       justify-content: space-between;
       padding-left: 9rem;
       padding-right: 9rem;
+
+      @media screen and (min-width: 0\0) {
+        height: 40px;
+      }
 
       &__buttons {
         &__button {
@@ -197,6 +232,10 @@ header {
     .middle {
       padding-left: 9rem;
       padding-right: 9rem;
+
+      @media screen and (min-width: 0\0) {
+        height: 100px;
+      }
     }
 
     .searchForm,
@@ -212,12 +251,21 @@ header {
       min-height: 50px;
       padding-left: 9rem;
       padding-right: 9rem;
+
+      @media screen and (min-width: 0\0) {
+        background-color: transparent;
+        position: fixed;
+      }
     }
 
     .line-desktop {
       display: block;
       width: calc(100vw - 18rem);
       margin-left: 9rem;
+      @media screen and (min-width: 0\0) {
+        margin-left: 0rem;
+        margin-top: 70px;
+      }
     }
   }
 }
@@ -234,6 +282,9 @@ header {
     .line-desktop {
       width: calc(100vw - 26rem);
       margin-left: 13rem;
+      @media screen and (min-width: 0\0) {
+        margin-left: 0rem;
+      }
     }
   }
 }
@@ -250,6 +301,10 @@ header {
     .line-desktop {
       width: calc(100vw - 40rem);
       margin-left: 20rem;
+
+      @media screen and (min-width: 0\0) {
+        margin-left: 0rem;
+      }
     }
   }
 }

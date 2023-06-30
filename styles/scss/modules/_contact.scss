@@ -5,6 +5,12 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 0\0) {
+    width: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   &__item {
     width: 100%;
     display: flex;
@@ -19,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
   .upper__contact {
     min-width: 120px;
 
@@ -56,6 +62,11 @@
   .upper__contact {
     min-width: 220px;
     flex-direction: row;
+
+    @media screen and (min-width: 0\0) {
+      width: 320px;
+      height: 40px;
+    }
 
     &__item {
       padding-left: 0.5rem;
@@ -97,8 +108,3 @@
     }
   }
 }
-
-
-
-
-
