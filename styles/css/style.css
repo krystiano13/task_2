@@ -647,7 +647,7 @@ header .shown {
   width: 75%;
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 200px) and (max-width: 279px) {
   .searchButton {
     height: 30px;
     width: 30px;
