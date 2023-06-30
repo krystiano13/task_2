@@ -108,7 +108,7 @@ header {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   header {
     .upper {
       min-height: 70px;
@@ -137,8 +137,8 @@ header {
     .upper {
       min-height: 38px;
       justify-content: space-between;
-      padding-left: 10rem;
-      padding-right: 10rem;
+      padding-left: 9rem;
+      padding-right: 9rem;
 
       &__buttons {
         &__button {
@@ -152,8 +152,8 @@ header {
     }
 
     .middle {
-      padding-left: 10rem;
-      padding-right: 10rem;
+      padding-left: 9rem;
+      padding-right: 9rem;
     }
 
     .searchForm,
@@ -167,14 +167,48 @@ header {
       position: static;
       justify-content: space-between;
       min-height: 50px;
-      padding-left: 10rem;
-      padding-right: 10rem;
+      padding-left: 9rem;
+      padding-right: 9rem;
     }
 
     .line-desktop {
       display: block;
-      width: calc(100vw - 20rem);
-      margin-left : 10rem;
+      width: calc(100vw - 18rem);
+      margin-left: 9rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  header {
+    .upper,
+    .middle,
+    nav {
+      padding-left: 13rem;
+      padding-right: 13rem;
+    }
+
+    .line-desktop {
+      width: calc(100vw - 26rem);
+      margin-left: 13rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  header {
+    .upper,
+    .middle,
+    nav {
+      padding-left: 20rem;
+      padding-right: 20rem;
+    }
+
+    .line-desktop {
+      width: calc(100vw - 40rem);
+      margin-left: 20rem;
     }
   }
 }

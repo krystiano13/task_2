@@ -13,6 +13,8 @@ $pink: #ecc7d0;
     width: 35px;
     height: 40px;
 
+    position: relative;
+
     img {
       height: 40px;
       position: absolute;
@@ -38,30 +40,6 @@ $pink: #ecc7d0;
     }
   }
 
-  @media screen and (min-width: 1100px) {
-    min-width: 125px;
-    display: flex;
-    justify-content: flex-end;
-
-    &__text {
-      display: block;
-      font-size: 0.7rem;
-      font-weight: 600;
-    }
-
-    &__icons {
-      img {
-        height: 30px;
-      }
-
-      &__count {
-        width: 1.2rem;
-        height: 1.2rem;
-        font-size: 0.65rem;
-        transform: translate(1.1rem, 1rem);
-      }
-    }
-  }
 
   @media screen and (min-width: 1100px) {
     min-width: 160px;
@@ -75,16 +53,29 @@ $pink: #ecc7d0;
     }
 
     &__icons {
-      margin-right : 0.6rem;
+      margin-right: 0.6rem;
       img {
-        height: 40px;
+        height: 28px;
       }
 
       &__count {
         width: 1.2rem;
         height: 1.2rem;
         font-size: 0.65rem;
-        transform: translate(1.3rem, 1.4rem);
+        transform: translate(1rem, 1.1rem);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1500px) {
+    &__icons {
+      margin-right: 0.6rem;
+      img {
+        height: 35px;
+      }
+
+      &__count {
+        transform: translate(1.2rem, 1.3rem);
       }
     }
   }
