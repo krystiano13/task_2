@@ -3,7 +3,8 @@ $borderColor: rgb(216, 216, 216);
 header {
   width: 100vw;
   min-height: 100px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   .line-desktop {
     display: none;
@@ -64,7 +65,7 @@ header {
 
   nav {
     width: 100%;
-    min-height: 65vh;
+    min-height: 400px;  
 
     display: flex;
     flex-direction: column;
@@ -80,6 +81,7 @@ header {
   }
 
   .shown {
+    position: relative;
     transform: translateY(0);
   }
 }
@@ -103,6 +105,8 @@ header {
     }
     nav {
       min-height: 175px;
+      height: 65vh;
+      height: auto;
     }
 
     .upper {
@@ -118,6 +122,10 @@ header {
 
 @media screen and (max-width: 320px) and (min-width: 280px) {
   header {
+    nav {
+      min-height: 65vh;
+      height: 65vh;
+    }
     .middle {
       padding-left: 0.5rem;
       padding-right: 0.5rem;
@@ -137,6 +145,7 @@ header {
   header {
     nav {
       min-height: 450px;
+      height: auto;
     }
     .upper {
       min-height: 70px;
