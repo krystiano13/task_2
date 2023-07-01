@@ -308,6 +308,9 @@ header .shown {
     padding-left: 20rem;
     padding-right: 20rem;
   }
+  header .middle {
+    min-height: 120px;
+  }
   header .line-desktop {
     width: calc(100vw - 40rem);
     margin-left: 20rem;
